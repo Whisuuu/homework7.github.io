@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    
+}
+body{
+    margin: 0;
+}
+.menu{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+.menu ul{
+    list-style-type: none;
+    background-color: blue;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.menu li{
+    float: left;
+    
+}
+.menu .login{
+    float: right;
+    
+}
+.menu li a{
+    padding: 25px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+}
+li a:hover:not(.active){
+    background-color: black;
+}
+.active{
+    background-color: rgb(135, 202, 35);
+}
+.content{
+    margin-top: 100px;
+}
+.content .title{
+    margin: 10px;
+}
+.title button{
+    background-color: rgb(144, 144, 248);
+    color: black;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+.title button:hover{
+    background-color: blue;
+    color: white;
+}
+
+.header{
+    background-color: rgb(70, 65, 65);
+    width: 100%;
+    height: auto;
+}
+.header img{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+}
+
+nav{
+    background-color: grey;
+    width: 30%;
+    padding: 20px;
+    
+}
+
+article{
+    background-color: rgb(190, 188, 188);
+    width: 70%;
+    padding: 20px;
+}
+section{
+    display: flex;
+}
+footer{
+    background-color: rgb(216, 193, 193);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    color: white;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+
+}
+
+/*responsive*/
+/*កែពណ៏តាមលក្ខខ័ណ្ឌ*/
+@media(max-width: 600px){
+    .menu li a{
+        padding: 10px 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        display: block;
+    }
+    section{
+        display: block;
+    }
+    nav{
+        background-color: grey;
+        width: 100%;
+        padding: 20px;
+        
+    }
+    article{
+        background-color: rgb(190, 188, 188);
+        width: 70%;
+        padding: 20px;
+    }
+    .header{
+        background-color: rgb(70, 65, 65);
+        width: 100%;
+        height: auto;
+    }
+
+}
